@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Diagrama de Flujo" id="0">
+    <mxGraphModel dx="1703" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="inicio" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="INICIO" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leer" parent="1" style="shape=parallelogram;whiteSpace=wrap;html=1;" value="Leer num1, num2 y num3" vertex="1">
+          <mxGeometry height="70" width="240" x="240" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cond1" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="¿num1 &gt;= num2 y num1 &gt;= num3?" vertex="1">
+          <mxGeometry height="120" width="260" x="230" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="mayor1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="mayor = num1" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="cond2" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="¿num2 &gt;= num1 y num2 &gt;= num3?" vertex="1">
+          <mxGeometry height="120" width="260" x="390" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="mayor2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="mayor = num2" vertex="1">
+          <mxGeometry height="60" width="160" x="320" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="mayor3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="mayor = num3" vertex="1">
+          <mxGeometry height="60" width="160" x="560" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="mostrar" parent="1" style="shape=parallelogram;whiteSpace=wrap;html=1;" value="Mostrar &quot;El numero mayor es:&quot;, mayor" vertex="1">
+          <mxGeometry height="70" width="300" x="250" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="fin" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="FIN" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="inicio" style="endArrow=block;html=1;" target="leer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="leer" style="endArrow=block;html=1;" target="cond1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="cond1" style="endArrow=block;html=1;" target="mayor1" value="Sí">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="cond1" style="endArrow=block;html=1;" target="cond2" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="cond2" style="endArrow=block;html=1;" target="mayor2" value="Sí">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="cond2" style="endArrow=block;html=1;" target="mayor3" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="mayor1" style="endArrow=block;html=1;" target="mostrar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="mayor2" style="endArrow=block;html=1;" target="mostrar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="mayor3" style="endArrow=block;html=1;" target="mostrar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="mostrar" style="endArrow=block;html=1;" target="fin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
